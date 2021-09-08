@@ -1,0 +1,163 @@
+//archive.html、archive-search.htmlのメイン部
+#post {
+    .container {
+            padding: 20px 20px 0 20px;
+
+                @include iPad{
+                    padding: 40px 40px 0 40px;
+                    display: block;
+                }
+    }
+
+    article {
+            padding-bottom: 20px;
+            // width: 100%;
+            h1 {
+                color: #000;
+                font-size: 1.8rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                padding-top: 10px;
+            }
+
+            p {
+                padding: 30px 10px 10px 0;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+    // }
+
+    // article {
+    //     width: 100%;
+    //     position: relative;
+        .cb_box {
+            position: relative;
+            @include iPad {
+                display: flex;
+            }
+
+            @include pc {
+                // max-width: 1120;
+            }
+
+            figure {
+                @include iPad {
+                    width: 50%;
+                }
+                
+
+                img {
+                    background-position: center;
+                    background-size: cover;
+                    height: 230px;
+                    width: 100%;
+                    // position: absolute;
+                        @include iPad {
+                            height: 100%;
+                            width: 100%;
+                        }
+                      
+                }
+            }
+            
+            // .cheese_burger {
+            //             background: url("/img/mainvisual-img/e3472c768077e90f47f5ca3c6ba0144e.png");
+            //             background-position: center;
+            //             background-size: cover;
+            //             // height: 230px;
+            //             height: 540px;
+            //             width: 100%;
+            //             position: absolute;
+
+            //                 @include iPad {
+            //                     height: 100%;
+            //                     width: 50%;
+            //                 }
+            // }
+
+            .box_ttl {
+                background-color: #3C2B1C;
+                color: #fff;
+                padding: 35px 15px 40px 15px;
+                // position: relative;
+                // position: absolute;
+
+                    @include iPad {
+                        padding: 30px;
+                        width: 50%;
+                        // left: 50%;
+                    }
+
+                    @include pc {
+                        padding: 40px;
+                    }
+
+                    // @media screen (max-width:1220px) {
+                    //     width: 700px;
+                    // }
+
+                dl {
+                    @include pc {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                dt {
+                    padding-top: 25px;
+                    font-size: 1.2rem;
+
+                        @include iPad {
+                            font-size: 1rem;
+                        }
+
+                        @include pc {
+                            padding-top: 40px;
+                            font-size: 1.5rem;
+                        }
+                }
+
+                dd {
+                    font-size: 1rem;
+                    font-family: 'M PLUS 1p', sans-serif;
+                    font-weight: 200;
+                    line-height: 1.5;
+                    padding: 10px 30px 40px 0;
+                    opacity: .7;
+
+                        @include iPad {
+                            font-weight: 300;
+                            line-height: 1.2;
+                            padding: 10px 28px 20px 0;
+                        }
+
+                        @include pc {
+                            padding: 25px 28px 40px 0;
+                        }
+                }
+
+                .button_wrapper {
+                    align-items: center;
+                    text-align:center;
+                
+                        .details_Btn {
+                            // display: block;
+                            // width: 160px;
+                            // height: 40px;
+                            padding: 10px 40px;
+                            border-radius: 35px;
+                            font-size: 1.05rem;
+                            font-weight: 300;
+
+                                @include iPad {
+                                    padding: 8px 35px;
+                                    font-size: 0.8rem;
+                                }
+
+                                @include pc {
+                                    padding: 15px 60px;
+                                }
+                        }
+                }
+            }
+        }
+    }
+}
