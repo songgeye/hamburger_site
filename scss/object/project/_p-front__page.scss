@@ -1,0 +1,159 @@
+//front-page.htmlのメイン部
+#stay {
+    position: relative;
+    .container {
+        padding: 20px 20px 0 20px;
+            @include iPad {
+                padding: 40px 20px 40px 20px;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+            }
+
+            // @include b_sc {
+            //     padding: 100px 40px 100px 40px;
+            // }
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 20px;
+            @include iPad {
+                margin: 0 20px 0 20px;
+            }
+
+            // @include b_sc {
+            //     margin: 0 40px 0 40px;
+            // }
+        
+            .take_out {
+                background: url("/img/mainvisual-img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png");
+                background-position: center;
+                background-size: cover;
+                height: 642px;
+                width: 100%;
+                position: relative;
+
+                    @include iPad {
+                        height: 681px;
+                    }
+                // @include b_sc {
+                //     height: 1000px;
+                // }//不要
+            }
+
+            .eat_in {
+                background: url("/img/mainvisual-img/cheeseburger-with-frenchfries.png");
+                background-position: center;
+                background-size: cover;
+                height: 642px;
+                width: 100%;
+                position: relative;
+                  
+                    @include iPad {
+                        height: 681px;
+                    }
+                    // @include b_sc {
+                    //     height: 1000px;
+                    // }//不要
+            }
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 2.3rem;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+
+        @include iPad {
+            font-size: 2.5rem;
+        }
+        // @include b_sc {
+        //     font-size: 3.5rem;
+        // }
+    }
+
+    hr {
+        width: 30px;
+    }
+
+    
+
+    .l_box {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        .box_ttl:nth-of-type(1){
+                background-color: #fff;
+                opacity: .6;
+                padding: 20px 10px 50px 10px;
+                margin: 0 10px 10px 10px;
+
+                    @include iPad {
+                        // padding: 20px 20px 50px 10px;
+                        // width: 94%;
+                    }
+
+                    @include pc {
+                        // width: 96.7%;
+                        // height: 24%;
+                    }
+                    // @include b_sc {
+                    //     padding: 20px 180px 50px 10px;
+                    // }
+
+                    // @include b_scr {
+                    //     padding: 20px 180px 50px 10px;
+                    // }
+
+            h2 {
+                font-size: 1.1rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                font-weight: 800;
+                padding-bottom: 25px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+
+        .box_ttl:nth-of-type(2) {
+                background-color: #fff;
+                opacity: .6;
+                padding: 20px 10px 50px 10px;
+                margin: 0 10px 10px 10px;
+
+                    @include iPad {
+                        // padding: 20px 20px 50px 10px;
+                    }
+
+                    @include pc {
+                        // width: 97.8%;
+                        // height: 24%;
+                    }
+                    // @include b_sc {
+                    //     padding: 20px 180px 50px 10px;
+                    // }
+
+            h2 {
+                font-size: 1.1rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                font-weight: 800;
+                padding-bottom: 25px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+        
+    }
+
+}
